@@ -505,6 +505,10 @@ header {
     padding: 15px 0;
 }
 
+#main-nav-bar-id.custom-menu {
+    background: #f5f5f5;
+}
+
 #main-nav-bar-id.scroll {
     background: #fff;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.49);
@@ -565,6 +569,10 @@ header {
     color: #fff;
     padding: 10px 15px;
     transition: all .4s;
+}
+
+.main-menu-itme li .link-main-menu.custom-text {
+    color: #969696;
 }
 
 .main-menu-itme li .link-main-menu:hover {
@@ -635,6 +643,17 @@ header {
 .btn-blue:disabled {
     opacity: .7;
     cursor: no-drop;
+}
+
+.btn-custom-primary {
+    background: #0593e6;
+    color: #fff!important;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 30px;
+    cursor: pointer;
+    outline-offset: 2px;
+    transition: all .4s;
 }
 
 .btn-blue-small {
@@ -1272,22 +1291,22 @@ header {
     font-size: .9rem;
     font-weight: 400;
     line-height: 1rem;
-    color: #8490AA;
-    border-radius: 5px;
-    background: #EFF3FA;
-    border-radius: 6.33106px;
+    color: #191919;
+    background: #f5f5f5;
     background-clip: padding-box;
-    border: 1px solid #EFF3FA;
+    border: 1px solid #f5f5f5;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .form-control-custom::placeholder {
-    color: #ADB9D1;
+    color: #919191;
 }
 
+.form-control-custom:hover,
 .form-control-custom:focus,
 .form-control-custom:focus-visible,
 .form-control-custom:active {
+    border-color: #969696;
     outline: 0 !important;
     box-shadow: none !important;
 }
@@ -1664,9 +1683,70 @@ header {
 }
 
 .email-subscribe-box {
-    padding: 1.4em 1em;
+    padding: 1em 1em;
     background-color: #fff;
     border-radius: 4px;
+}
+
+.sign-in-section {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 7em;
+}
+
+.auth-heading-page {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.auth-page-footer {
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #969696;
+    padding: 1.4em 0;
+}
+
+.auth-page-top-footer {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid #1919192e;
+    margin-bottom: 1em;
+}
+
+.auth-page-list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-page-list-footer-link {
+    padding: 10px;
+    display: inline-flex;
+    color: #969696;
+    font-size: .8rem;
+}
+
+.footer-page-copy-right,
+.footer-page-sub-footer {
+    width: 100%;
+    text-align: left;
+    color: #969696;
+    font-size: .95rem;
+}
+
+.footer-page-sub-footer {
+    text-align: right;
+}
+
+.auth-link {
+    display: block;
+    color: #191919;
+    text-decoration: underline;
+    font-size: .95rem;
 }
 
 
