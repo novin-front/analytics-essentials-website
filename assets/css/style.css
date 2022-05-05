@@ -1888,6 +1888,7 @@ header {
     background: transparent;
     border: 0;
     color: #36394D;
+    cursor: pointer;
 }
 
 .dasboard-content-paragraph {
