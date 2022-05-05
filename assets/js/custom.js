@@ -49,6 +49,17 @@
              }
          })
      }
+     if ($(".quiz-answer-btn").length) {
+         $(".quiz-answer-btn").on("click", function(event) {
+             event.preventDefault();
+             $(".quiz-answer-btn").each(function() {
+                 $(this).removeClass("selected");
+             })
+             $(this).addClass("selected");
+             $(".btn-quiz-continue").removeAttr("disabled")
+             console.log(event);
+         })
+     }
      let countfalse = true;
      $("#navbar-toggler-btn").click(function() {
          $(".mobile-blur-bg").fadeIn(100);
