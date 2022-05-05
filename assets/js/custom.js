@@ -1,4 +1,54 @@
  $(document).ready(function() {
+     if ($(".dashboard-search-box-header").length) {
+         $(".dashboard-search-box-header").on("click", function() {
+             if ($(".dashboard-search-box-header").hasClass("show")) {
+                 $(".dashboard-search-box-content").hide();
+                 $(".dashboard-search-box-header").removeClass('show');
+             } else {
+                 $(".dashboard-search-box-content").show();
+                 $(".dashboard-search-box-header").addClass('show');
+             }
+
+             if ($(".dashboard-search-box-head-icon i").hasClass("fa-solid fa-sort-down")) {
+                 $(".dashboard-search-box-head-icon i").removeClass("fa-sort-down");
+                 $(".dashboard-search-box-head-icon i").addClass("fa-sort-up");
+             } else if ($(".dashboard-search-box-head-icon i").hasClass("fa-sort-up")) {
+                 $(".dashboard-search-box-head-icon i").removeClass("fa-sort-up");
+                 $(".dashboard-search-box-head-icon i").addClass("fa-sort-down");
+
+             }
+         })
+     }
+     if ($(".dashboard-search-box").length) {
+         $("body").on("click", function(event) {
+             if ($(event.target).closest(".dashboard-search-box").length == 0) {
+                 $(".dashboard-search-box-header").removeClass('show');
+                 $(".dashboard-search-box-content").hide();
+                 $(".dashboard-search-box-head-icon i").removeClass("fa-sort-up");
+                 $(".dashboard-search-box-head-icon i").addClass("fa-sort-down");
+             }
+         });
+     }
+     if ($(".dasboard-content-header-icons").length) {
+         $(".dasboard-content-header-icons").on("click", function() {
+             let dataWidth = $(this).attr("data-width");
+             console.log("dataWidth ->", dataWidth)
+             if (dataWidth == "half") {
+                 $("#dasboard-content-wrapper").removeClass("col-md-9");
+                 $("#dasboard-content-wrapper").addClass("col-md-12");
+                 $("#dashboard-sidebar-wrapper").hide();
+                 $(this).attr("data-width", "full");
+                 console.log("111 dataWidth ->", dataWidth)
+             } else if (dataWidth == "full") {
+                 $("#dasboard-content-wrapper").removeClass("col-md-12");
+                 $("#dasboard-content-wrapper").addClass("col-md-9");
+                 $("#dashboard-sidebar-wrapper").show();
+                 $(this).attr("data-width", "half");
+                 console.log("222 dataWidth ->", dataWidth)
+
+             }
+         })
+     }
      let countfalse = true;
      $("#navbar-toggler-btn").click(function() {
          $(".mobile-blur-bg").fadeIn(100);
