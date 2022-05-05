@@ -60,6 +60,11 @@
              console.log(event);
          })
      }
+     if ($(".profile-dashboard-main-menu").length) {
+         $(".profile-dashboard-main-menu").on("click", function() {
+             $(".dashboard-drop-down").toggle();
+         })
+     }
      let countfalse = true;
      $("#navbar-toggler-btn").click(function() {
          $(".mobile-blur-bg").fadeIn(100);

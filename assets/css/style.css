@@ -549,6 +549,10 @@ header {
     align-items: center;
 }
 
+.li-list-menu {
+    position: relative;
+}
+
 .main-menu-auth-btn {
     display: flex;
     justify-content: center;
@@ -1161,9 +1165,9 @@ header {
     font-size: .9rem;
     font-weight: 400;
     line-height: 1rem;
-    color: #8490AA;
+    color: #353F53;
     border-radius: 5px;
-    background: #EFF3FA;
+    background: #fff;
     border-radius: 6.33106px;
     background-clip: padding-box;
     border: 1px solid #EFF3FA;
@@ -1171,7 +1175,7 @@ header {
 }
 
 .form-control-custom-select::placeholder {
-    color: #ADB9D1;
+    color: #353F53;
 }
 
 .form-control-custom-select:focus,
@@ -1182,8 +1186,8 @@ header {
 }
 
 .select2-container--default .select2-selection--single {
-    background-color: #eff3fa;
-    border: 1px solid #B9C8DF;
+    background-color: #fff;
+    border: 1px solid #353F53;
     border-radius: 4px;
     min-height: 46px;
     color: #8490AA;
@@ -1193,7 +1197,7 @@ header {
     margin-top: 10px;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid #B9C8DF;
+    border: 1px solid #606060;
     box-sizing: border-box;
     box-shadow: 0px 23.3862px 53.9682px rgba(0, 0, 0, 0.03);
 }
@@ -2426,6 +2430,150 @@ header {
     border-bottom: 2px solid #CBCCD6;
 }
 
+.profile-dashboard-main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-dashboard-user-name {
+    margin-left: 8px;
+    color: #969696;
+    font-size: .9rem;
+}
+
+.profile-dashboard-icon {
+    font-size: 2.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid #969696;
+}
+
+.profile-dashboard-icon-down {
+    font-size: .9rem;
+    padding: 0 4px;
+    color: #969696;
+}
+
+.dashboard-drop-down {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 0 0px 10px 10px;
+    margin-top: 6px;
+    box-shadow: 0 2px 16px 0 rgb(0 0 0 / 10%);
+}
+
+.dashboard-drop-down-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: .9rem;
+    color: #969696;
+    padding-bottom: 8px;
+    transition: all .4s;
+}
+
+.dashboard-drop-down-link:hover {
+    color: #000;
+}
+
+.dashboard-drop-down-link-icon {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-dashboard-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 8em;
+    padding-bottom: 4em;
+}
+
+.my-dashboard-title {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.my-dashboard-list-tile {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.my-course-box-title {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.my-course-box {
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #191919;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.my-course-box-progress {
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.my-course-box-progress .progress {
+    height: 4px;
+    background-color: #fff;
+}
+
+.my-course-box-progress .progress-bar {
+    background-color: #969696;
+}
+
+.my-course-box-progress-percent {
+    position: absolute;
+    bottom: 4px;
+    font-size: .85rem;
+    color: #0593e6;
+}
+
+.my-course-box-link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-course-box-link {
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 1em;
+    color: #000;
+    transition: all .4s;
+}
+
+.my-course-box-link:hover {
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.31);
+}
+
 
 /* home page styles */
 
@@ -3320,6 +3468,14 @@ header {
     .dasboard-content-paragraph {
         padding: 0 15px;
         padding-bottom: 1.5em;
+    }
+    .dashboard-drop-down {
+        display: none;
+    }
+    .dashboard-drop-down-link {
+        padding: .3em 1em;
+        display: block;
+        color: #000;
     }
 }
 
