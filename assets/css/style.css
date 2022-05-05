@@ -2383,6 +2383,48 @@ header {
     justify-content: start;
 }
 
+.quiz-result-title {
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+    text-align: center;
+    color: #36394D;
+}
+
+.quiz-score-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.quiz-score-box-lable {
+    font-size: 1.1rem;
+    color: #36394D;
+}
+
+.quiz-result-msg-answer {
+    width: 100%;
+    font-size: 1.05rem;
+    margin-bottom: 1em;
+}
+
+.quiz-score-box-counter {
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    color: #379A49;
+    margin-bottom: .5em;
+}
+
+.quiz-text-result-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.3em;
+    margin-bottom: 1.3em;
+    border-bottom: 2px solid #CBCCD6;
+}
+
 
 /* home page styles */
 
