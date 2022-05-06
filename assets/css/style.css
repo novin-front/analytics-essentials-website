@@ -2494,6 +2494,13 @@ header {
     align-items: center;
 }
 
+.my-dashboard-title-md {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 1em 0;
+}
+
 .my-dashboard-section {
     width: 100%;
     position: relative;
@@ -2630,6 +2637,24 @@ input#userAvatarToUpload {
     position: relative;
     text-align: center;
     color: #0593e6;
+}
+
+.input-text {
+    font-size: .85rem;
+    margin: 10px 0;
+    display: block;
+}
+
+.info-input {
+    color: #191919;
+}
+
+.error-input {
+    color: #d83232;
+}
+
+.valid-input {
+    color: #379A49;
 }
 
 
