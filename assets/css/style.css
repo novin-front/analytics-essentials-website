@@ -2701,6 +2701,20 @@ ul.order-history-mobile-list li:nth-child(odd) {
     margin-top: 1em;
 }
 
+.credit-cardit-image-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.credit-cardit-img {
+    width: 120px;
+    height: 70px;
+    border: 1px solid #eee;
+    margin: 5px;
+    border-radius: 5px;
+}
+
 
 /* home page styles */
 
