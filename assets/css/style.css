@@ -2657,6 +2657,11 @@ input#userAvatarToUpload {
     color: #379A49;
 }
 
+.dashboard-profile-sub-title {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
 
 /* home page styles */
 
