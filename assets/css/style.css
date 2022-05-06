@@ -1714,6 +1714,10 @@ header {
     width: 100%;
 }
 
+.auth-heading-page-sub-title {
+    font-size: 1rem;
+}
+
 .auth-page-footer {
     width: 100%;
     background-color: #f5f5f5;
