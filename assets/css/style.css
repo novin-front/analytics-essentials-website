@@ -2528,6 +2528,13 @@ header {
     color: #191919;
     overflow: hidden;
     border-radius: 4px;
+    transition: all .4s;
+}
+
+.my-course-box:hover {
+    --webkit-box-shadow: -3px 6px 16px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -3px 6px 16px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: -3px 6px 16px 0px rgba(0, 0, 0, 0.35);
 }
 
 .my-course-box-progress {
