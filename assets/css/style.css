@@ -912,20 +912,20 @@ header {
     cursor: no-drop;
 }
 
-.btn-border-purple-shape {
-    background: #ffffff;
+.btn-blue-round {
+    background: #0593e6;
     background-repeat: no-repeat;
-    border-color: #926BFF;
-    color: #926BFF;
+    border-color: #0593e6;
+    color: #fff;
     transition: all .8s;
     border-radius: 3px;
-    border-radius: 0px 12px;
+    border-radius: 15px;
 }
 
-.btn-border-purple-shape:focus,
-.btn-border-purple-shape:hover {
-    background-color: #926BFF;
-    border-color: #926BFF;
+.btn-blue-round:focus,
+.btn-blue-round:hover {
+    background-color: #0593e6;
+    border-color: #0593e6;
     outline: none;
     color: #fff;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.32);
@@ -933,8 +933,8 @@ header {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.32);
 }
 
-.btn-border-purple-shape:disabled,
-.btn-border-purple-shape:disabled {
+.btn-blue-round:disabled,
+.btn-blue-round:disabled {
     opacity: .7;
     cursor: no-drop;
 }
@@ -2572,6 +2572,57 @@ header {
     -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.31);
     -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.31);
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.31);
+}
+
+.dashboard-profile-sidebar-list {
+    width: 100%;
+    padding: 1em;
+    position: relative;
+    margin: 2em 0;
+}
+
+.dashboard-profile-sidebar-link {
+    display: block;
+    padding: 8px 16px;
+    background-color: #f5f5f5;
+    border-right: 4px solid #f5f5f5;
+    color: #000;
+    font-size: .9rem;
+    transition: all .4s;
+}
+
+.dashboard-profile-sidebar-link:hover,
+.dashboard-profile-sidebar-link.active {
+    border-right: 4px solid #969696;
+    color: #969696;
+}
+
+.dashboard-profile-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+input#userAvatarToUpload {
+    display: none;
+}
+
+.profile-avatar-img {
+    display: block;
+    width: 60%;
+    border: 1px solid;
+    margin: 1em auto;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.user-avatr-upload-lable {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #0593e6;
 }
 
 
