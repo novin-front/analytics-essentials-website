@@ -263,7 +263,6 @@
      }
      var top = 0;
      $(window).on('scroll', function() {
-
          if ($(window).scrollTop() >= 80) {
              $("#main-nav-bar-id").addClass("scroll");
              $(".navbar-brand").css({
